@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 18, 2019 at 02:42 PM
+-- Generation Time: Jun 18, 2019 at 02:55 PM
 -- Server version: 5.7.26-0ubuntu0.18.04.1
 -- PHP Version: 7.2.19-0ubuntu0.18.04.1
 
@@ -113,7 +113,7 @@ ALTER TABLE `transactions`
 -- Constraints for table `accounts`
 --
 ALTER TABLE `accounts`
-  ADD CONSTRAINT `accounts_ibfk_1` FOREIGN KEY (`customer_number`) REFERENCES `customers` (`customer_number`);
+  ADD CONSTRAINT `accounts_ibfk_1` FOREIGN KEY (`account_number`) REFERENCES `customers` (`customer_number`);
 
 --
 -- Constraints for table `transactions`
